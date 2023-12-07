@@ -4,12 +4,29 @@
     box-sizing: border-box;
 }
 
-header {
+.title {
     background-color: #2c3e50;
     height: 80px;
 }
 
 .jumbotron {
     background-color: #1abc9c;
-    height: 600px;
+    height: 600px; /* per costruzione*/
 }
+
+section.portfolio {
+    margin: 20px 0;
+}
+
+.main-content {
+    background-color: #9692c1;
+    min-height: 400px; /* per costruzione*/
+    margin: 10px 0;
+}
+
+section.about {
+    margin: 20px 0;
+    background-color: #1abc9c;
+    height: 600px; /* per costruzione*/
+}
+
