@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+/** General */
+
+ul {
+    list-style-type: none;
+}
 
 /** Utility */
 
@@ -79,6 +84,20 @@ section.about {
     background-color: #1abc9c;
 }
 
+.download {
+    display: flex;
+    justify-content: center;
+}
+
+.download a {
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px 15px;
+    margin-top: 20px;
+}
+
 
 /*? Footer */
 
@@ -94,6 +113,31 @@ footer {
     padding: 30px 0;
 }
 
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social a {
+    text-decoration: none;
+    color: white;
+
+    width: 50px;
+    height: 50px;
+    border: 1px solid white;
+    border-radius: 50%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.text-important {
+    color: #1abc9c;
+}
+
 
 
 .bottom-footer {
@@ -101,7 +145,9 @@ footer {
     height: 100px; /* per costruzione*/
 }
 
-
+.copyright {
+    font-size: 14px;
+}
 
 
 
