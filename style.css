@@ -4,30 +4,83 @@
     box-sizing: border-box;
 }
 
+
+/** Utility */
+
+.text-dkgray {
+    color: #333333;
+}
+
+
 /*? Header*/
 .bg-navbar {
     background-color: #2c3e50;
 }
 
-
+/** jumbotron */
 .jumbotron {
     background-color: #1abc9c;
-    height: 600px; /* per costruzione*/
+    height: 550px; /* per costruzione*/
+    color: white;
 }
+
+.jumbotron img {
+    height: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+/** Separatore */
+.star-separator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.fa-star {
+    font-size: 30px;
+}
+
+.separator {
+    width: 70px; 
+    border: 2px solid;
+    border-radius: 10px;
+}
+
+.star-separator.even {
+    border-color: white;
+    color: white;
+}
+
+.star-separator.odd {
+    border-color: #2c3e50;
+    color: #333333;
+}
+
+/*? Main */
 
 section {
     margin: 20px 0;
 }
 
-.main-content {
-    background-color: #9692c1;
-    min-height: 400px; /* per costruzione*/
-    margin: 10px 0;
+/** Section Portfolio */
+
+.portfolio img {
+    height: 100%;
+    width: auto;
+    display: block;
+    
 }
 
+
+/** Section About */
 section.about {
     background-color: #1abc9c;
 }
+
+
+/*? Footer */
 
 footer {
     margin-top: 20px;
@@ -46,4 +99,29 @@ footer {
 .bottom-footer {
     background-color: #2c3e50;
     height: 100px; /* per costruzione*/
+}
+
+
+
+
+
+
+@media screen and (min-width: 768px) {
+        .star-separator {
+        gap: 15px;
+    }
+
+    .separator {
+        width: 120px; 
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .star-separator {
+        gap: 20px;
+    }
+
+    .separator {
+        width: 200px; 
+    }
 }
